@@ -1,0 +1,58 @@
+.header-area {
+    display: flex;
+    justify-content: space-between;
+    background-color: aqua;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+}
+
+.menu-area>ul {
+    list-style: none;
+    display: flex;
+    margin-right: 20px;
+
+}
+
+.menu-area ul li {
+    margin-left: 10px;
+    position: relative;
+}
+
+.menu-area ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    background-color: yellow;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+.menu-area ul li a:hover {
+    color: rgb(255, 255, 0);
+    background-color: black;
+}
+
+.dropdown {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    list-style: none;
+    background-color: blueviolet;
+    margin: 0px;
+    padding: 0;
+    width: 150px;
+    display: none;
+}
+
+.menu-area ul li:hover .dropdown {
+    display: block;
+}
+
+.dropdown li {
+    margin-bottom: 10px;
+}
